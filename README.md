@@ -1,1 +1,1 @@
-# Kafka-producers
+This is a Kafka producer that reads log messages from Splunk HEC and writes to a Kafka topic
