@@ -3,9 +3,13 @@ import re
 from confluent_kafka import Producer
 
 # Configure Kafka connection
-bootstrap_servers = 'https://nldkfkbrkr-001.edj.devjones.com:8083,https://nldkfkbrkr-002.edj.devjones.com:8083'
+bootstrap_servers = 'https://localhost:8083,https://localhost:8083'
 topic = 'test'
-producer = Producer({'bootstrap_servers': bootstrap_servers})
+producer = Producer({'bootstrap_servers': bootstrap_servers',
+                    'security.protocol' : 'SSL',
+                    'ssl.keystore.password' : 'testSecret',
+                    'ssl.keystore.location' : './certkey.pem'
+                    })
 
 # Define log file path
 log_file = '/Users/xyz/IdeaProjects/src/connect.log'
