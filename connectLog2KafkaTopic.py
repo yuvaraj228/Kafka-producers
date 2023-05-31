@@ -8,7 +8,7 @@ topic = 'test'
 producer = Producer({'bootstrap_servers': bootstrap_servers})
 
 # Define log file path
-log_file = '/Users/sdendi/IdeaProjects/src/connect.log'
+log_file = '/Users/xyz/IdeaProjects/src/connect.log'
 
 # Define log pattern using regular expression
 log_pattern = r'^\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3})\] (\w+) \[([^\]]+)\] (.*)$'
