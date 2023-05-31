@@ -11,3 +11,5 @@ In this snippet:
 *This code reads messages from Splunk HEC using a GET request and the Splunk HEC token for authentication. It then sends each message as a JSON string to the specified Kafka topic using the Kafka producer.
 
 *This is a basic script and it needs error handling and retry mechanism to be added to it.
+  
+  Reference - https://www.geeksforgeeks.org/introduction-to-confluent-kafka-python-producer/
